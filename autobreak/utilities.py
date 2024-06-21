@@ -10,8 +10,8 @@ kcal_per_cal = 0.001    # [kcal/cal]
 R            = R_SI_units*cal_per_J*kcal_per_cal  # 0.0019872 [kcal/mol•°K]
 
 # Default concentrations
-SCAF_CONC    =  10.0E-9  #  10.0 nM (Typical folding reaction)
-STAP_CONC    = 100.0E-9  # 100.0 nM (Typical folding reaction)
+SCAF_CONC    =  50.0E-9  #  50.0 nM (Typical folding reaction)
+STAP_CONC    = 200.0E-9  # 200.0 nM (Typical folding reaction)
 Mg_CONC      =  12.5E-3  #  12.5 mM (Assumed in Dunn et al 2015)
 TRIS_CONC    =  40.0E-3  #  40.0 mM (Assumed in Dunn et al 2015)
 
