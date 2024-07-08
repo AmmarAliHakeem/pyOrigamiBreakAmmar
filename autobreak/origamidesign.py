@@ -411,6 +411,7 @@ class Oligo:
 
         # Assign edge length
         new_edge.edge_length = break_distance
+        print("new_edge.edge_length: ", new_edge.edge_length)
 
         # Make the connection
         new_edge.make_connection(start_break, final_break)
