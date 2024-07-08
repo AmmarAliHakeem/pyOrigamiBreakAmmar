@@ -1869,6 +1869,7 @@ class Origami:
 
         # Iterate over oligos
         for oligo in self.cadnano_oligos:
+            print(oligo)
             strand5p  = oligo.strand5p()
             vh        = strand5p.idNum()
             isForward = strand5p.isForward()
