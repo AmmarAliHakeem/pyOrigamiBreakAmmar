@@ -391,6 +391,7 @@ class Oligo:
         '''Get the initial score before the oligo is broken'''
         # Create break
         new_edge = autobreak.BreakEdge()
+        print("Inside get_inital_score, new_edge = ",new_edge)
 
         # Assign origami
         new_edge.origami = self.origami
@@ -1869,21 +1870,18 @@ class Origami:
 
         # Iterate over oligos
         for oligo in self.cadnano_oligos:
-            print(oligo)
             strand5p  = oligo.strand5p()
+            print("strand5p: ",strand5p)
             vh        = strand5p.idNum()
+            print("vh: ",vh)
             isForward = strand5p.isForward()
+            print("isFoward: ", isForward)
 
             # Scaffold criteria: (forward and even-number helix) or (reverse and odd-number helix)
             if int(isForward) + vh % 2 == 1:
                 self.scaffolds.append(oligo)
             else:
                 self.staples.append(oligo)
-        print("inside get_oligos function, scaffold:",self.scaffolds[0])
-        print("inside get_oligos function, scaffold_strand:",self.scaffolds[0].strands)
-        for i in range(2):
-            print("inside get_oligos function, staples:",self.staples[i])
-            print("inside get_oligos function, staples_strand:",self.staples[i].strands)
 
     def read_sequence(self):
         '''Read sequence file'''
