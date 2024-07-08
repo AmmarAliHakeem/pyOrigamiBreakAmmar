@@ -419,6 +419,7 @@ class Oligo:
 
         # Set edge weight
         new_edge.edge_weight = self.origami.autobreak.optimize(new_edge)
+        print(" new_edge.edge_weight: ", new_edge.edge_weight)
 
         # Create csv parameters for the edge
         new_edge.create_csv_params()
