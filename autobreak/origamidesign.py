@@ -1880,8 +1880,10 @@ class Origami:
             else:
                 self.staples.append(oligo)
         print("inside get_oligos function, scaffold:",self.scaffolds[0])
-        for i in range(3):
+        print("inside get_oligos function, scaffold_length:",len(self.scaffolds[0]))
+        for i in range(2):
             print("inside get_oligos function, staples:",self.staples[i])
+            print("inside get_oligos function, staples_length:",len(self.staples[i]))
 
     def read_sequence(self):
         '''Read sequence file'''
