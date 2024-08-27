@@ -12,7 +12,7 @@ R            = R_SI_units*cal_per_J*kcal_per_cal  # 0.0019872 [kcal/mol•°K]
 # Default concentrations
 SCAF_CONC    =  50.0E-9  #  10.0 nM (Typical folding reaction)
 STAP_CONC    = 200.0E-9  # 100.0 nM (Typical folding reaction)
-Mg_CONC      =  5.0E-3  #  12.5 mM (Assumed in Dunn et al 2015)
+Mg_CONC      =  12.5E-3  #  12.5 mM (Assumed in Dunn et al 2015)
 TRIS_CONC    =  40.0E-3  #  40.0 mM (Assumed in Dunn et al 2015)
 
 # Sequence enthalpy/entropy values at 37°C and 1 M NaCl from SantaLucia & Hicks 2004
