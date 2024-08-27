@@ -416,9 +416,9 @@ class Oligo:
         new_edge.make_connection(start_break, final_break)
         self.end_to_end_edge = new_edge
 
-        print("new_edge everything: ")
-        for key, value in new_edge.__dict__.items():
-            print(f'{key}: {value}')
+        print("new_edge everything: ")  # ammar 
+        for key, value in new_edge.__dict__.items(): # ammar 
+            print(f'{key}: {value}') # ammar
 
         # Set edge weight
         new_edge.edge_weight = self.origami.autobreak.optimize(new_edge)
@@ -1874,7 +1874,7 @@ class Origami:
         # Iterate over oligos
         for oligo in self.cadnano_oligos:
             strand5p  = oligo.strand5p()
-            print("strand5p: ",strand5p)
+            # print("strand5p: ",strand5p)  # ammar
             vh        = strand5p.idNum()
             isForward = strand5p.isForward()
         
@@ -1884,8 +1884,8 @@ class Origami:
                 self.scaffolds.append(oligo)
             else:
                 self.staples.append(oligo)
-        print("scaffolds: ", self.scaffolds)
-        print("staples: ", self.staples)
+       # print("scaffolds: ", self.scaffolds)   # ammar
+       # print("staples: ", self.staples)    # ammar
 
     def read_sequence(self):
         '''Read sequence file'''
