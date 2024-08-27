@@ -419,6 +419,7 @@ class Oligo:
         print("new_edge everything: ")  # ammar 
         for key, value in new_edge.__dict__.items(): # ammar 
             print(f'{key}: {value}') # ammar
+        print("............................................................................................")  # ammar
 
         # Set edge weight
         new_edge.edge_weight = self.origami.autobreak.optimize(new_edge)
