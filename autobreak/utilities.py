@@ -153,10 +153,12 @@ def distance_to_loop_dG(distance_square, temperature_kelvin=323.15):
 def position_to_loop_dG(scaffold_length, start_index, end_index, scaffold_circular=True, 
                         temperature_kelvin=323.15):
     # Get number of minimum number of bases between to location
-    base_distance  = get_min_scaffold_distance(scaffold_length, start_index, end_index, scaffold_circular)
+    base_distance  = get_min_scaffold_distance(scaffold_length, start_index, end_index, scaffold_circular) 
+    print("num bases:",base_distance) # ammar
+    print("start_index,end_index:", start_index, end_index) # ammar
 
     # Determine end to end distance^2
-    distance_square = end_to_end_distance(base_distance)
+    distance_square = end_to_end_distance(base_distance) 
 
     # Get the free energies
     energies = distance_to_loop_dG(distance_square, temperature_kelvin)
