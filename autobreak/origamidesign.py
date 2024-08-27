@@ -411,7 +411,6 @@ class Oligo:
 
         # Assign edge length
         new_edge.edge_length = break_distance
-        print("new_edge.edge_length: ", new_edge.edge_length)
 
         # Make the connection
         new_edge.make_connection(start_break, final_break)
@@ -423,8 +422,7 @@ class Oligo:
 
         # Set edge weight
         new_edge.edge_weight = self.origami.autobreak.optimize(new_edge)
-        print(" new_edge.edge_weight: ", new_edge.edge_weight)
-
+       
         # Create csv parameters for the edge
         new_edge.create_csv_params()
 
