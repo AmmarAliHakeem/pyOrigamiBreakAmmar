@@ -2531,6 +2531,9 @@ def run(is_notebook_session, args=None):
         # Set best result's sequence offset
         new_autobreak.set_best_sequence_offset()
 
+        # AMMAR , trying to print the breakedge for the origami
+        # amm_oligo = new_origami.oligos['staples'] 
+
     else:
         # Prepare origami for autobreak
         new_origami.prepare_origami()
