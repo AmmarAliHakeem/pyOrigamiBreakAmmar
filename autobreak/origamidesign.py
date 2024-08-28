@@ -395,13 +395,15 @@ class Oligo:
         # Assign origami
         new_edge.origami = self.origami
 
-        print("new_edge everything: after assign origami ")  # ammar 
-        for key, value in new_edge.__dict__.items(): # ammar 
-            print(f'{key}: {value}') # ammar
-        print("............................................................................................")  # ammar
+        # ammar , printing new_edge everything, does not give energies!! 
 
         # Assign autobreak
         new_edge.autobreak = self.origami.autobreak
+
+        print("new_edge everything: after assign autobreak")  # ammar 
+        for key, value in new_edge.__dict__.items(): # ammar 
+            print(f'{key}: {value}') # ammar
+        print("............................................................................................")  # ammar
 
         # Make the connection
         if self.circular:
