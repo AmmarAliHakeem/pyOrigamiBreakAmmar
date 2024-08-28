@@ -417,10 +417,7 @@ class Oligo:
         # Make the connection
         new_edge.make_connection(start_break, final_break)
         
-        print("new_edge everything: after making connection ")  # ammar 
-        for key, value in new_edge.__dict__.items(): # ammar 
-            print(f'{key}: {value}') # ammar
-        print("............................................................................................")  # ammar
+        # ammar , printing new_edge everything here, gives energies!! 
         
         self.end_to_end_edge = new_edge
 
@@ -434,6 +431,11 @@ class Oligo:
        
         # Create csv parameters for the edge
         new_edge.create_csv_params()
+
+        print("new_edge everything: after csv ")  # ammar 
+        for key, value in new_edge.__dict__.items(): # ammar 
+            print(f'{key}: {value}') # ammar
+        print("............................................................................................")  # ammar
 
         # Assign the score
         self.initial_score = new_edge.edge_weight
