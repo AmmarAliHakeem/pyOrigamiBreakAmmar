@@ -416,6 +416,12 @@ class Oligo:
         
         # Make the connection
         new_edge.make_connection(start_break, final_break)
+        
+        print("new_edge everything: after making connection ")  # ammar 
+        for key, value in new_edge.__dict__.items(): # ammar 
+            print(f'{key}: {value}') # ammar
+        print("............................................................................................")  # ammar
+        
         self.end_to_end_edge = new_edge
 
         # print("new_edge everything: ")  # ammar 
