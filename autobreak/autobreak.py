@@ -2531,6 +2531,10 @@ def run(is_notebook_session, args=None):
         # Set best result's sequence offset
         new_autobreak.set_best_sequence_offset()
 
+        # ammar, trying to get the dg,dg_int list and stuff printed but only once!!
+        
+        
+
     else:
         # Prepare origami for autobreak
         new_origami.prepare_origami()
