@@ -432,11 +432,6 @@ class Oligo:
         # Create csv parameters for the edge
         new_edge.create_csv_params()
 
-        print("new_edge everything: after csv ")  # ammar 
-        for key, value in new_edge.__dict__.items(): # ammar 
-            print(f'{key}: {value}') # ammar
-        print("............................................................................................")  # ammar
-
         # Assign the score
         self.initial_score = new_edge.edge_weight
         self.folding_prob  = new_edge.edge_prob
