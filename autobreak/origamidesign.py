@@ -395,13 +395,8 @@ class Oligo:
         # Assign origami
         new_edge.origami = self.origami
 
-        # ammar , printing new_edge everything here, does not give energies!! 
-
         # Assign autobreak
         new_edge.autobreak = self.origami.autobreak
-
-        
-        # ammar , printing new_edge everything here, does not give energies!! 
 
         # Make the connection
         if self.circular:
@@ -414,17 +409,11 @@ class Oligo:
         # Get break to break distance
         break_distance  = start_break.get_break_distance(final_break)
         
-        # ammar , printing new_edge everything here, does not give energies!! 
-        
         # Assign edge length
         new_edge.edge_length = break_distance
 
-        print("new_edge everything: after assigning edge length")  # ammar 
-        for key, value in new_edge.__dict__.items(): # ammar 
-            print(f'{key}: {value}') # ammar
-        print("............................................................................................")  # ammar
-
-
+        # ammar , printing new_edge everything here, does not give energies!! 
+        
         # Make the connection
         new_edge.make_connection(start_break, final_break)
         self.end_to_end_edge = new_edge
