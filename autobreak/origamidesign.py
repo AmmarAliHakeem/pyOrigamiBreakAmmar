@@ -395,6 +395,10 @@ class Oligo:
         # Assign origami
         new_edge.origami = self.origami
 
+        print("new_edge everything: after assign origami ")
+        for key, value in new_edge.__dict__.items():
+            print(f'{key}: {value}')
+
         # Assign autobreak
         new_edge.autobreak = self.origami.autobreak
 
@@ -417,9 +421,9 @@ class Oligo:
         new_edge.make_connection(start_break, final_break)
         self.end_to_end_edge = new_edge
 
-        print("new_edge everything: ")
-        for key, value in new_edge.__dict__.items():
-            print(f'{key}: {value}')
+        # print("new_edge everything: ")
+        # for key, value in new_edge.__dict__.items():
+        #     print(f'{key}: {value}')
 
         # Set edge weight
         new_edge.edge_weight = self.origami.autobreak.optimize(new_edge)
